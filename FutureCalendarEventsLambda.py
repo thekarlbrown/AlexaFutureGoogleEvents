@@ -10,6 +10,9 @@ from oauth2client.file import Storage
 import datetime
 from dateutil import parser, tz
 
+import shutil
+import json
+
 try:
     import argparse
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
@@ -38,6 +41,11 @@ def get_credentials():
         print('Storing credentials to ' + credential_path)
     return credentials
 
+# Major Credentials Programming Hack Alert! While I look for a better way to Web-Based Validate Credentials for the first time, I am using crededentials from my local Macbook
+if not os.path.exists('/tmp/.credentials/'):
+    os.makedirs('/tmp/.credentials/')
+with open('/tmp/.credentials/calendar-python-quickstart.json', 'w+') as outfile:
+    json.dump({'For Karls': 'Eyes Only'}, outfile)
 credentials = get_credentials()
 http = credentials.authorize(httplib2.Http())
 service = discovery.build('calendar', 'v3', http=http)
@@ -70,6 +78,7 @@ def returnFullAlexaCalendarResponse(future_events_to_display):
     return alexaSpeechToReturn
 
 def lambda_handler(event, context):
+
     if (event["session"]["application"]["applicationId"] !=
             "amzn1.ask.skill.e36d5c7c-db76-4d38-b7e3-fbc30b94c498"):
         raise ValueError("Invalid Application ID")

@@ -1,5 +1,6 @@
-# Client Secret
+# Google Client Secrets and Authentication Tokens (HACK ALERT)
 client_secret.json
+calendar-python-quickstart.json
 
 # Alexa Skill Lambda Zip
 AlexaFutureCalendarEvents.zip

@@ -1,3 +1,17 @@
+# Client Secret
+client_secret.json
+
+# pip downloaded files
+google_api_python_client-1.6.2-py2.py3-none-any.whl
+httplib2-0.10.3.tar.gz
+oauth2client-4.1.2-py2.py3-none-any.whl
+pyasn1-0.3.1-py2.py3-none-any.whl
+pyasn1_modules-0.0.10-py2.py3-none-any.whl
+rsa-3.4.2-py2.py3-none-any.whl
+six-1.10.0-py2.py3-none-any.whl
+uritemplate-3.0.0-py2.py3-none-any.whl
+python_dateutil-2.6.1-py2.py3-none-any.whl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,16 +1,28 @@
 # Client Secret
 client_secret.json
 
+# Alexa Skill Lambda Zip
+AlexaFutureCalendarEvents.zip
+
 # pip downloaded files
-google_api_python_client-1.6.2-py2.py3-none-any.whl
-httplib2-0.10.3.tar.gz
-oauth2client-4.1.2-py2.py3-none-any.whl
-pyasn1-0.3.1-py2.py3-none-any.whl
-pyasn1_modules-0.0.10-py2.py3-none-any.whl
-rsa-3.4.2-py2.py3-none-any.whl
-six-1.10.0-py2.py3-none-any.whl
-uritemplate-3.0.0-py2.py3-none-any.whl
-python_dateutil-2.6.1-py2.py3-none-any.whl
+apiclient/
+dateutil/
+google_api_python_client-1.6.2.dist-info/
+googleapiclient/
+httplib2/
+oauth2client-4.1.2.dist-info/
+oauth2client/
+pyasn1-0.3.1.dist-info/
+pyasn1/
+pyasn1_modules-0.0.10.dist-info/
+pyasn1_modules/
+python_dateutil-2.6.1.dist-info/
+rsa-3.4.2.dist-info/
+rsa/
+six-1.10.0.dist-info/
+six.py
+uritemplate-3.0.0.dist-info/
+uritemplate/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

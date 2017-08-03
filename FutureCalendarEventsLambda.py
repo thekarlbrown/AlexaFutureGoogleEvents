@@ -21,8 +21,8 @@ CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'Google Calendar API Python Quickstart'
 
 def get_credentials():
-    home_dir = os.path.expanduser('~')
-    credential_dir = os.path.join(home_dir, '.credentials')
+    target_dir = '/tmp/'
+    credential_dir = os.path.join(target_dir, '.credentials')
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
@@ -71,7 +71,7 @@ def returnFullAlexaCalendarResponse(future_events_to_display):
 
 def lambda_handler(event, context):
     if (event["session"]["application"]["applicationId"] !=
-            ""):
+            "amzn1.ask.skill.e36d5c7c-db76-4d38-b7e3-fbc30b94c498"):
         raise ValueError("Invalid Application ID")
 
     if event["session"]["new"]:

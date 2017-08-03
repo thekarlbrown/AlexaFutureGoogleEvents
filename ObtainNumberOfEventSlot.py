@@ -1,2 +1,2 @@
-for count in range (0,100):
+for count in range (1, 100):
     print (count)
